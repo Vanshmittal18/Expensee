@@ -1,48 +1,74 @@
-Expensify – Expense Tracker Web App
-📌 Overview
+# 🧾 Expensee — Expense Tracker API
 
-Expensify is a full-stack web application that helps users track, manage, and analyze their daily expenses efficiently.
-The application allows users to add, edit, delete, and categorize expenses while providing a clean and user-friendly interface.
+[![Node.js](https://img.shields.io/badge/Node.js-18.x-green)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-4.x-lightgrey)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-6.x-brightgreen)](https://www.mongodb.com/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
-This project was built to demonstrate full-stack development skills using Node.js, Express, MongoDB, and EJS.
+**Expensee** is a backend API for managing personal expenses and incomes.  
+It provides authentication, income/expense management, and dashboard summaries — ready to integrate with any frontend.
 
-🚀 Features
+---
 
-➕ Add new expenses
+## 🚀 Features
 
-✏️ Edit existing expenses
+- 🔐 User Authentication (Register/Login) with JWT
+- 💰 Manage Incomes and Expenses
+- 📊 Dashboard summary for quick insights
+- 📁 File uploads (Excel or receipts) using Multer
+- RESTful API design
 
-❌ Delete expenses
+---
 
-📂 Categorize expenses
+## 🧱 Tech Stack
 
-📊 View all expenses in an organized list
+- **Backend:** Node.js + Express  
+- **Database:** MongoDB (via Mongoose)  
+- **Authentication:** JWT  
+- **Password Security:** Bcrypt  
+- **File Upload:** Multer  
+- **Configuration:** dotenv  
+- **Other:** CORS  
 
-📅 Track expenses with date information
+---
 
-💻 Responsive and clean UI
+## ⚡ Getting Started
 
-🛠️ Tech Stack
+### Prerequisites
 
-Frontend
+- Node.js v18+
+- MongoDB (local or Atlas)
+- npm or yarn
 
-HTML5
+### Installation
 
-CSS3
+```bash
+# Clone the repo
+git clone https://github.com/Vanshmittal18/Expensee.git
+cd Expensee
 
-JavaScript
+# Install dependencies
+npm install
+Environment Variables
 
-EJS (Embedded JavaScript Templates)
+Create a .env file in the root directory:
 
-Backend
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=5000
+Run the Server
+# Start in development mode
+npm run dev
 
-Node.js
+# Or start normally
+npm start
 
-Express.js
+The server will run at http://localhost:5000.
 
-Database
-
-MongoDB
-
-Git & GitHub
+💡 Future Enhancements
+Swagger API documentation
+Rate limiting & security middleware
+Pagination for income/expense lists
+Monthly summary charts & analytics
+Frontend integration (React / Flutter / React Native)
 
